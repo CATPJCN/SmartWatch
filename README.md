@@ -1,63 +1,105 @@
-## Smartwatch Health Data: Exploratory Data Analysis (EDA)
+# Smartwatch Health Data: Exploratory Data Analysis (EDA)
+
 
 ### Project Overview
-This project involves a comprehensive Exploratory Data Analysis (EDA) of 10,000 health observations collected from smartwatch users. The goal was to clean a "dirty" dataset and prepare it for marketing insights while maintaining high statistical integrity.
+This project involves a comprehensive **Exploratory Data Analysis (EDA)** of 10,000 health observations. The objective was to clean a "dirty" dataset and prepare it for marketing insights while maintaining high statistical integrity.
+
 
 ### Technical Skills Demonstrated
-- Data Cleaning: Handled inconsistent strings (e.g., "Very High", "ERROR") and impossible values (negative sleep hours) using Python's pandas library.
+* **Data Cleaning:** Handled inconsistent strings (e.g., `"Very High"`, `"ERROR"`), impossible values,(negative sleep hours) and data mismatch using Python's `pandas` library.
+* **Statistical Reasoning:** Performed a **Sensitivity Analysis** to validate data removal and ensure population representativeness.
+* **Data Visualization:** Built a **Master EDA Dashboard** using `Seaborn` and `Matplotlib` to analyze distributions and identify outliers.
 
-- Statistical Reasoning: Performed a Sensitivity Analysis to validate data removal.
-
-- Data Visualization: Built a Master EDA Dashboard using Seaborn and Matplotlib to analyze distributions and identify outliers.
-
-### Key Statistical Findings: 
-**The "0.02 Bias" Check**
-A critical part of this analysis was deciding how to handle 49 non-standard "Very High" entries in the Stress Level column.
-
-- Scenario A (Recoding): If "Very High" was forced to a value of 10.
-
-- Scenario B (Coercion): If "Very High" was coerced to NaN
-
-- Conclusion: Because the difference was only less than 0.02, the data was coerced to NaN to avoid "guessing" values, as the impact on the overall population density was negligible.
 
 ### Project Structure
-- Smartwatch_Analysis.ipynb: The primary Python notebook containing the cleaning pipeline and visualizations.
+* `Smartwatch_Analysis.ipynb`: The primary Python notebook containing the cleaning pipeline and visualizations.
+* `requirements.txt`: List of necessary Python libraries (Pandas, Seaborn, etc.).
 
-- requirements.txt: List of necessary Python libraries (Pandas, Seaborn, etc.).
+---
+---
 
 ### Setup Instructions
-* **Clone the repository.**
 
-* **Create a virtual environment:**
+#### 1. Clone the repository
+```bash
+git clone <SmartWatch-repository-link>
+cd <your-SmartWatch-folder-name>
+```
 
-Windows: python -m venv venv
+---
 
-Mac/Linux: python3 -m venv venv
+#### 2. Create a virtual environment
 
-* **Activate the environment:**
+Windows: 
+```bash
+python -m venv venv
+```
 
-Windows: .\venv\Scripts\activate
+Mac/Linux: 
+```bash
+python3 -m venv venv
+```
 
-Mac/Linux: source venv/bin/activate
+---
 
-* **Update Pip (Recommended):**
-Windows: python -m pip install --upgrade pip
+#### 3. Activate the environment:
 
-Mac/Linux: pip install --upgrade pip
+Windows: 
+```bash
+.\venv\Scripts\activate
+```
 
-* **Install dependencies:**
+Mac/Linux: 
+```bash
+source venv/bin/activate
+```
+
+---
+
+#### Recommenedation (Update Pip)
+Windows: 
+```bash
+python -m pip install --upgrade pip
+```
+
+Mac/Linux: 
+```bash
+pip install --upgrade pip
+```
+
+---
+
+#### 4. Install dependencies:
   
-Windows: pip install -r requirements.txt
+Windows: 
+```bash
+pip install -r requirements.txt
+```
 
-Mac/Linux: pip install -r requirements.txt
+Mac/Linux: 
+```bash
+pip install -r requirements.txt
+```
 
-* **Register the Kernel for Jupyter:**
-Windows: python -m ipykernel install --user --name=venv --display-name "Python (Smartwatch)"
+---
 
-Mac/Linux: python3 -m ipykernel install --user --name=venv --display-name "Python (Smartwatch)
+#### 5. Register the Kernel for Jupyter:
 
-* **Run the Notebook:**
+Windows: 
+```bash
+python -m ipykernel install --user --name=venv --display-name "Python (Smartwatch)"
+```
 
-Windows: jupyter notebook
+Mac/Linux: 
+```bash
+python3 -m ipykernel install --user --name=venv --display-name "Python (Smartwatch)
+```
 
-Mac/Linux: jupyter notebook
+---
+
+#### 6. Run the Notebook:
+
+Windows/Mac/Linux:
+```bash
+jupyter notebook
+```
