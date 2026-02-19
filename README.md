@@ -30,17 +30,34 @@ A critical part of this analysis was deciding how to handle 49 non-standard "Ver
 
 * **Create a virtual environment:**
 
-python -m venv venv
+Windows: python -m venv venv
+
+Mac/Linux: python3 -m venv venv
 
 * **Activate the environment:**
 
 Windows: .\venv\Scripts\activate
+
 Mac/Linux: source venv/bin/activate
+
+* **Update Pip (Recommended):**
+Windows: python -m pip install --upgrade pip
+
+Mac/Linux: pip install --upgrade pip
 
 * **Install dependencies:**
   
-pip install -r requirements.txt
+Windows: pip install -r requirements.txt
+
+Mac/Linux: pip install -r requirements.txt
+
+* **Register the Kernel for Jupyter:**
+Windows: python -m ipykernel install --user --name=venv --display-name "Python (Smartwatch)"
+
+Mac/Linux: python3 -m ipykernel install --user --name=venv --display-name "Python (Smartwatch)
 
 * **Run the Notebook:**
 
-Open Smartwatch_Analysis.ipynb and select the venv kernel.
+Windows: jupyter notebook
+
+Mac/Linux: jupyter notebook
