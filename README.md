@@ -7,13 +7,14 @@ This project involves a comprehensive **Exploratory Data Analysis (EDA)** of 10,
 
 ### Technical Skills Demonstrated
 * **Data Cleaning:** Handled inconsistent strings (e.g., `"Very High"`, `"ERROR"`), impossible values,(negative sleep hours) and data mismatch using Python's `pandas` library.
-* **Statistical Reasoning:** Performed a **Sensitivity Analysis** to validate data removal and ensure population representativeness.
-* **Data Visualization:** Built a **Master EDA Dashboard** using `Seaborn` and `Matplotlib` to analyze distributions and identify outliers.
+* **Statistical Reasoning:** Performed a Sensitivity Analysis to validate data removal and ensure population representativeness.
+* **Data Visualization:** Built a Master EDA Dashboard using `Seaborn` and `Matplotlib` to analyze distributions and identify outliers.
 
 
 ### Project Structure
 * `Smartwatch_Analysis.ipynb`: The primary Python notebook containing the cleaning pipeline and visualizations.
 * `requirements.txt`: List of necessary Python libraries (Pandas, Seaborn, etc.).
+* `unclean_smartwatch_health_data.csv`: Data set used in this project from kaggle (https://www.kaggle.com/datasets/mohammedarfathr/smartwatch-health-data-uncleaned)
 
 ---
 ---
@@ -83,23 +84,9 @@ pip install -r requirements.txt
 
 ---
 
-#### 5. Register the Kernel for Jupyter:
+#### 5. Run the Analysis in IDE
 
-Windows: 
-```bash
-python -m ipykernel install --user --name=venv --display-name "Python (Smartwatch)"
-```
-
-Mac/Linux: 
-```bash
-python3 -m ipykernel install --user --name=venv --display-name "Python (Smartwatch)
-```
-
----
-
-#### 6. Run the Notebook:
-
-Windows/Mac/Linux:
-```bash
-jupyter notebook
-```
+1. Open the project folder in your IDE.
+2. Open `Smartwatch_Analysis.ipynb`.
+3. Set your kernel to the `./venv` environment.
+4. Run cells directly within the editor.
